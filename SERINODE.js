@@ -10,7 +10,7 @@ async function fetchData() {
             },
             body: `
                 from(bucket: "SERINODE")
-                |> range(start: -2m)
+                |> range(start: -10m)
                 |> last()
             `
         });
